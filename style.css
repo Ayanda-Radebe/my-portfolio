@@ -34,8 +34,7 @@ body {
 }
 
 .sidebar nav ul li a {
-    text-decoration: none
-    ;
+    text-decoration: none;
     color: black;
     font-size: 18px;
     display: inline-block;
@@ -103,5 +102,50 @@ body {
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+
 }
+
+.button {
+    border: 2px solid ;
+    color: white;
+    background-color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .button:hover{
+    background-color: orangered;
+    color: black;
+  }
+
+ .button2{
+    background-color: orangered;
+ }
+
+ .button2:hover{
+    color: white;
+    background-color: black;
+ }
+
+ .button1{
+    background-color: black;
+ }
+
+ .button1:hover{
+    color: white;
+    background-color: orangered;
+ }
+
+ .button-container{
+    padding: 60px;
+    margin: 10px 5px;
+    text-align: left;
+ }
