@@ -9,6 +9,7 @@
 body {
     display: flex;
     height: 100vh;
+    flex-direction: column; /* Change to column for better layout */
 }
 
 
@@ -156,7 +157,12 @@ body {
  }
 
 
- .About-section{
+ .About-section {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 10vh; /* Full height to take the screen */
     color: aqua;
- }
+    
+}
   
