@@ -178,8 +178,13 @@ body {
 .About-Heading{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 35px;
+    margin-top: 100px;
 }
 
-.about-para {
+.about-paragraph {
+    text-align: center;
+    display: block;
+    margin-top: 90px;
     
+
 }
