@@ -192,7 +192,7 @@ body {
 }
 
 .qualification{
-    font-size: 23px;
+    font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     
@@ -200,7 +200,13 @@ body {
 
 .flex-container{
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
+}
+
+.experience-container{
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
