@@ -198,6 +198,12 @@ body {
     
 }
 
+.flex-container{
+    display: flex;
+    justify-content: space-between ;
+}
+
+
 .grey-heading{
     color: #606060;
 }
@@ -290,7 +296,4 @@ body {
   
   .skills-name{
     width: 70%;
-    margin-left: 20%;
-    
-  }
-  
+}
