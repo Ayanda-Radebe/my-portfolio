@@ -249,5 +249,48 @@ body {
     margin-bottom: 40px;
     text-align: center;
   }
+
+  .skills-container {
+    width: 60%;
+    background-color: #ddd;
+    margin-left: 20%;
+  }
   
+  .skills {
+    text-align: right;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    color: white;
+  }
+
+  .html{
+    width: 80%;
+    background-color: orangered;
+  }
+
+  .css{
+    width: 80%;
+    background-color: orangered;
+  }
+
+  .js{
+    width: 50%;
+    background-color: orangered;
+  }
+
+  .data{
+    width: 70%;
+    background-color: orangered;
+  }
+
+  .business{
+    width: 75%;
+    background-color: orangered;
+  }
+  
+  .skills-name{
+    width: 70%;
+    margin-left: 20%;
+    
+  }
   
