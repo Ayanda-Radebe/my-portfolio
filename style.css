@@ -236,8 +236,7 @@ body {
 .qualification{
     font-size: 20px;
     padding-top: 5px;
-    padding-bottom: 5px;
-    
+    padding-bottom: 5px;   
 }
 
 .flex-container{
@@ -410,7 +409,7 @@ body {
   justify-content: center;
   padding: 40px 0;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .form-container {
