@@ -71,19 +71,19 @@ body {
 
 @keyframes colorChange {
   0% {
-      background-color: orangered; 
+      background-color: rgb(236, 199, 185); 
   }
   25% {
-      background-color: orange; 
+      background-color: rgb(179, 179, 179); 
   }
   50% {
-      background-color: #8b877e;
+      background-color: rgb(114, 91, 81);
   }
   75% {
-      background-color: gray; 
+      background-color: rgb(71, 56, 56); 
   }
   100% {
-      background-color: #292828; 
+      background-color: #775c5c; 
   }
 }
 
