@@ -10,7 +10,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures body takes up full viewport height */
+  min-height: 100vh;
   margin: 0; 
 }
 
@@ -66,24 +66,24 @@ body {
   border-radius: 5px;
   font-weight: bold;
   animation: colorChange 6s infinite;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.6s ease;
 }
 
 @keyframes colorChange {
   0% {
-      background-color: rgb(236, 199, 185); 
+      background-color: orangered; 
   }
   25% {
-      background-color: rgb(179, 179, 179); 
+      background-color: rgb(0, 0, 0); 
   }
   50% {
-      background-color: rgb(114, 91, 81);
+      background-color: orangered;
   }
   75% {
-      background-color: rgb(71, 56, 56); 
+      background-color: rgb(0, 0, 0); 
   }
   100% {
-      background-color: #775c5c; 
+      background-color: orangered; 
   }
 }
 
