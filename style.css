@@ -210,7 +210,9 @@ body {
 .About-Heading{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 35px;
-    margin-top: 100px;   
+    margin-top: 100px;
+    color: orangered;
+    border-bottom:solid black;   
   }
   
 .about-paragraph {
@@ -225,12 +227,14 @@ body {
     margin-top: 100px;
     margin-bottom: 40px;
     text-align: center;
+    color: orangered;
+    border-bottom:solid #000000;
 
 }
 
 .education-heading:hover{
-  color: orangered;
-  border-bottom:solid #000000;
+  color: black;
+  border-bottom: solid orangered;
 }
 
 .qualification{
@@ -268,11 +272,13 @@ body {
     margin-top: 100px;
     margin-bottom: 40px;
     text-align: center;
+    color: orangered;
+    border-bottom:solid #000000;
 }
 
 .certifications-heading:hover{
-  color: orangered;
-  border-bottom:solid #000000;
+  color: black;
+  border-bottom:solid orangered;
 }
 
 .certificate-container {
@@ -313,11 +319,13 @@ body {
     margin-top: 100px;
     margin-bottom: 40px;
     text-align: center;
+    color: orangered;
+    border-bottom:solid black;
   }
 
   .skills-heading:hover{
-    color: orangered;
-    border-bottom:solid #000000;
+    color: black;
+    border-bottom:solid orangered;
   }
   
 
@@ -501,6 +509,7 @@ footer {
   padding: 20px 0;
   width: 100%;
   margin-bottom: 0;
+  margin-left: 150PX;
 }
 
 .social-icons {
