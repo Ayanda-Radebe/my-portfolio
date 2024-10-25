@@ -121,10 +121,9 @@ body {
 }
 
 .profile-img {
-    width: 350px;
-    height: 350px;
+
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 5%;
     border: 2px solid orangered;
 }
 
@@ -213,6 +212,11 @@ body {
     margin-top: 100px;
     color: orangered;
     border-bottom:solid black;   
+  }
+
+  .About-Heading:hover{
+    color: black;
+    border-bottom: solid orangered;
   }
   
 .about-paragraph {
