@@ -1,17 +1,28 @@
-.ChatBot {
-    border: 3px solid #2F8D46;
+#chatbot-icon {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+.Chatbot {
+    border: 3px solid #c0bfbf;
     border-radius: 10px;
     margin: 50px auto;
     overflow: hidden;
     width: 500px;
     overflow-y: scroll;
-
-    height: 60px;
+    height: 60%;
     background: rgb(255, 255, 255) url(gfg-gg-logo.svg);
     background-size: contain;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-repeat: no-repeat;
     background-position: center;
+    position: fixed;
+    bottom: 80px;
+    right: 20px; 
 }
 
 header {
@@ -26,16 +37,6 @@ header h2 {
     margin: 0;
 }
 
-.Chatbot {
-    position: fixed;
-    width: 30%;
-    height: 70%;
-    margin-right: 0px;
-    bottom: 0;
-    right: 0;
-    background-color: white;
-}
-
 .chatbox {
     padding: 15px;
     height: 40px;
@@ -45,24 +46,18 @@ header h2 {
     background-color: #ccc;
     width: fit-content;
     border-radius: 7px;
-  }
+}
 
 .chat p {
     padding: 0px;
     border-radius: 10px;
-    max-width:fit-content;
+    max-width: fit-content;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .chat-input {
-    padding: 60px;
-}
-
-.chat-outgoing p {
-    background-color: #162887;
-    align-self: flex-end;
-    color: #fff;
+    padding: 10px;
 }
 
 .chat-input textarea {
@@ -75,6 +70,5 @@ header h2 {
     background-color: #dcdcdc85;
     font-size: 16px;
     color: rgb(0, 0, 0);
-    font-weight: 60px;
     height: 40px;
-  }
+}
