@@ -79,7 +79,7 @@ header h2 {
 }
 
 .user-reply {
-    background-color: #007bff; 
+    background-color: orangered; 
     color: white;
     padding: 10px;
     border-radius: 20px;
@@ -91,32 +91,53 @@ header h2 {
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
+.chat-option {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
 
-/*
+.chat-option:hover {
+    background-color: #969494;
+}
 
 .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
-    padding: 10px;
-    background-color: #f9f9f9;
-    display: flex;
-    gap: 10px; 
 }
 
 .chat-input textarea {
-    width: 100%;
-    padding: 5px;
+    flex: 1;
+    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 7px;
+    border-radius: 10px;
     resize: none;
     outline: none;
-    background-color: #dcdcdc85;
+    margin-right: 10px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
-    height: 40px;
-    flex: 1;   
 }
-    */
-    
+
+#send-btn {
+    padding: 8px 12px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: orangered;
+}
