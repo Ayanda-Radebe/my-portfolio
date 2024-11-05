@@ -5,37 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
 
   <body>
+
+  <!--Side bar-->
+  
   <div class="container">
 
     <div class="sidebar">
       <h1>Aya<span class="orange-text">nda.</span></h1>
       <nav>
           <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Education</a></li>
-              <li><a href="#works">Experience</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#home"><i class="fa-solid fa-house fa-fade"></i>
+                Home</a></li>
+              <li><a href="#about"><i class="fa-solid fa-user fa-fade"></i></i>
+                About</a></li>
+              <li><a href="#education"><i class="fa-solid fa-user-graduate fa-fade"></i>
+                Education</a></li>
+              <li><a href="#certificates"><i class="fa-solid fa-certificate fa-fade"></i></i>
+                  Certifications</a></li>
+              <li><a href="#skills"><i class="fa-solid fa-toolbox fa-fade"></i>
+                Skills</a></li>
           </ul>
+          <div class="github-btn">
+            <a href="https://github.com/Ayanda-Radebe" target="_blank" class="btn">My Projects</a>
+        </div>
+    </div>
       </nav>
   </div>
   
   
   <!-- Home Page-->
+
   <div class="main-content">
-    <section id="HomePage">
+    <section id="home">
       <div class="profile-container">
           <img src="img/grad.JPG" alt="Profile Image" class="profile-img">
           <div class="text-content">
               <h1>Hi I'm</h1>
               
-              <h2>Aya<span class="orange-text">nda</span> <br>Rad<span class="orange-text">ebe</span><span class="name-text">a</span></h2>
+              <h2>Aya<span class="orange-text">nda</span> <br>Rad<span class="orange-text">ebe</span><span class="name-text"></span></h2>
               <p>Junior Software Developer</p>
   
               <div class="container">
@@ -46,27 +63,220 @@
               </div>
   
               <div class="button-container">
-              <button class="button button1">Review CV</button>
-              <button class=" button button2">Hire Me</button>
+
+                <a href="/files/Radebe Ayanda’s Resume.pdf"><button class="button button1">Review CV</button></a>
+                <a href="contact.html">
+                  <button class="button button2">Contact Me</button>
+                </a>
               </div>
           </div>
       </div>
     </section>
 
     <!--About section-->
-    <section id="AboutPage">
+    <section id="about">
       <div class="About-section">
         <h1 class="About-Heading">About Me</h1>
       </div> 
        
         <p class="about-paragraph">An ambitious Information Technology graduate, pursing real-world experience to develop acquired skills. Proficient in business systems and eager to learn new processes and programming languages</p><br>
-          <p>Hi! My name is <span class="orange-text">Ayanda Radebe.</span>.I am a Software Developer at Capaciti, and I am deeply passionate about technology and innovation. Over the course of my studies and learnership, I have honed my skills in software development and gained hands-on experience in building impactful and successful projects.In addition to my technical skills, I bring a strong work ethic, attention to detail, and a love for learning. I believe that the best projects are built through a combination of creativity, teamwork, and a dedication to excellence. Outside of coding. I enjoy playing games, reading novels and going out.</p>
+          <p>Hi! My name is <B><span class="orange-text">Ayanda Radebe.</span></B>Passionate about technology, experienced software developer at Capaciti, with <I>strong work ethic, attention to detail, and dedication to excellence.</I> Enjoys games, reading, and going out.</p><br>
 
           <p>I am excited about the future and eager to take on new challenges that allow me to continue contributing to the evolving tech landscape.</p>
     </section>
 
+
+    <!-- Education -->
+
+    <section id="education">
+      <h1 class="education-heading">Education | Experience</h1>
+      <div class="flex-container">    
+
+        <div class="education-container">
+        <p class="grey-heading">2022</p>
+        <p class="qualification">Bachelor of Information Technology in<br> Business Systems</p>
+        <p class="grey-heading">Rosebank College</p><br>
+
+        <p class="grey-heading">2019</p>
+        <p class="qualification">Higher Certificate in Construction and <br>Engineering</p>
+        <p class="grey-heading">Rosebank College</p><br>
+
+        <p class="grey-heading">2018</p>
+        <p class="qualification">National Senior Certificate</p>
+        <p class="grey-heading">Hoërskool Harrismith</p>
+        </div>
+      
+        <div class="experience-container">
+          <div class="experience">
+        <p class="experience-heading">Adapt IT | 06/2023 - 05/2024 </p>
+        <p>Systems Developer Intern</p><br>
+
+        <p class="experience-heading">mLab | 08/2023 - 09/2024 </p>
+        <p>Software Developer Canidate</p><br>
+
+        <p class="experience-heading">Capaciti | 10/2023 - To Date </p>
+        <p>Cobol Intern</p><br>
+      </div>
+
   </div>
+      </div>
+
+        
+    </section>
+
+<!--Certifications-->
+
+<setion id="certificates">
+<h1 class="certifications-heading">Certifications</h1>
+
+
+  <div class="certificate-container">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="card">
+        <h2>Google Cloud Data Analytics</h2>
+        <p>Learning data analysis fundamentals and visualization techniques</p>
+      </div>
+      <div class="flip-card-back">
+        <h1>Google</h1>
+        <p>2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="card">
+        <h2>Artificial Intelligence</h2>
+        <p>Developing an understanding of AI concepts and applications.</p>
+      </div>
+      <div class="flip-card-back">
+        <h1>University of Johannesburg</h1>
+        <p>2023</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="card">
+        <h2>Introduction to Data Analytics</h2>
+        <p>Learning data analysis fundamentals and visualization techniques.</p>
+      </div>
+      <div class="flip-card-back">
+        <h1>Coursera</h1>
+        <p>2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="card">
+        <h2>Data Analytics using Excel</h2>
+        <p>Developing an understanding of data-driven decision-making processes.</p>
+      </div>
+      <div class="flip-card-back">
+        <h1>Great Learning Academy</h1>
+        <p>2024</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="card">
+        <h2>Azure</h2>
+        <p>Master cloud computing and Azure platform services.</p>
+      </div>
+      <div class="flip-card-back">
+        <h1>Great Learning Academy</h1>
+        <p>2022</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  </setion>
+
+  <!--Skills-->
+
+  <section id="skills">
+    <div class="skills-section">
+      <h1 class="skills-heading">Skills</h1>
+      <p class="skills-name">HTML</p>
+        <div class="skills-container">
+          <div class="skills html">80%</div>
+        </div>
+
+        <p class="skills-name">CSS</p>
+        <div class="skills-container">
+          <div class="skills css">80%</div>
+        </div>
+
+        <p class="skills-name">JavaScript</p>
+        <div class="skills-container">
+          <div class="skills js">50%</div>
+        </div>
+
+        <p class="skills-name">Data Visualisation</p>
+        <div class="skills-container">
+          <div class="skills data">70%</div>
+        </div>
+
+          <p class="skills-name">Business Analysis</p>
+        <div class="skills-container">
+          <div class="skills business">75%</div>
 </div>
-  
+    </div> 
+    </section>
+    <br>
+
+    </div>
+
+    <!-- Footer Section -->
+<section><footer>
+  <div class="social-icons">
+      <a href="https://github.com/Ayanda-Radebe" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ayanda-radebe-b547941a2" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <div class="footer-bottom">
+      <p>&copy; 2024. Designed by Ayanda Radebe</p>
+  </div>
+</footer></section>
+
+<!--ChatBot-->
+   <i class="fa-solid fa-robot" id="chatbot-icon" onclick="toggleChatbot()"></i>
+
+ 
+    <div class="Chatbot" id="chatbot" style="display: none;">
+        <header>
+            <h2>ChatBot</h2>
+            <span alt="Close" id="cross" onclick="toggleChatbot()">X</span>
+        </header>
+        <ul class="chatbox">
+          <div class="chatbot-incoming chat">
+              <p>Hey! 👋</p> <br>
+              <p>How can I assist you today? </p>
+          </div>
+          <button id="get-started-btn" class="get-started-btn">Let's get started</button>
+      </ul>
+      <div class="chat-input">
+        <textarea id="user-input" rows="1" placeholder="Type your message..."></textarea>
+        <button id="send-btn">Send</button>
+    </div>
+
+
+        <!--
+        <div class="chat-input">
+            <textarea rows="0" cols="17" placeholder="Enter a message..."></textarea>
+            <button id="sendBTN">Send</button> 
+        </div>-->
+    </div>
+  <script src="script.js" defer></script>
+
+
   </body>
 </html>
