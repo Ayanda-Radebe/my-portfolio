@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.css">
+    <link rel="stylesheet" href="chatbot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -247,35 +247,40 @@
   </div>
 </footer></section>
 
-<!--ChatBot-->
-   <i class="fa-solid fa-robot" id="chatbot-icon" onclick="toggleChatbot()"></i>
+<!-- ChatBot -->
+<i class="fa-solid fa-robot" id="chatbot-icon" onclick="toggleChatbot()"></i>
 
- 
-    <div class="Chatbot" id="chatbot" style="display: none;">
-        <header>
-            <h2>ChatBot</h2>
-            <span alt="Close" id="cross" onclick="toggleChatbot()">X</span>
-        </header>
-        <ul class="chatbox">
-          <div class="chatbot-incoming chat">
-              <p>Hey! 👋</p> <br>
-              <p>How can I assist you today? </p>
-          </div>
-          <button id="get-started-btn" class="get-started-btn">Let's get started</button>
-      </ul>
-      <div class="chat-input">
-        <textarea id="user-input" rows="1" placeholder="Type your message..."></textarea>
-        <button id="send-btn">Send</button>
+<div class="chatbot" id="chatbot" style="display: none;">
+  <header>
+    <h2>ChatBot</h2>
+    <button id="close-btn" onclick="toggleChatbot()" aria-label="Close">✖</button>
+  </header>
+
+  <!-- ✅ Chat messages area -->
+  <div class="chatbox" id="chatbox">
+    <div class="chatbot-incoming chat">
+      <p>Hey! 👋</p>
+      <p>How can I assist you today?</p>
     </div>
+  </div>
+
+  <!-- ✅ Start button OUTSIDE chatbox -->
+  <button id="get-started-btn" class="get-started-btn">Let's get started</button>
+
+  <!-- ✅ Input area -->
+  <div class="chat-input">
+    <textarea id="user-input" rows="1" placeholder="Type your message..."></textarea>
+    <button id="send-btn">Send</button>
+  </div>
+</div>
 
 
-        <!--
-        <div class="chat-input">
-            <textarea rows="0" cols="17" placeholder="Enter a message..."></textarea>
-            <button id="sendBTN">Send</button> 
-        </div>-->
+<script src="chatbot.js" defer></script>
+
+
+
     </div>
-  <script src="script.js" defer></script>
+  <script src="chatbot.js" defer></script>
 
 
   </body>
