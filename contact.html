@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
 
@@ -56,6 +56,18 @@
           <button type="submit" class="button-submit">Send Message</button>
         </form>
       </div>
+
+      <!-- Modal Popup -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2> <i class="fa-solid fa-envelope fa-bounce" style="color: #ff0000;"></i>
+      Email Successfully Sent!
+    </h2>
+    <p>Thank you for reaching out. I will get back to you soon.</p>
+  </div>
+</div>
+
   
       <div class="image-container">
         <img src="img/form.JPG" alt="grad picture">
@@ -73,6 +85,36 @@
       <p>&copy; 2024. Designed by Ayanda Radebe</p>
   </div>
 </footer></section>
+
+<script>
+const form = document.querySelector("form");
+const modal = document.getElementById("successModal");
+const closeBtn = document.getElementById("closeModal");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Show the modal popup
+  modal.style.display = "block";
+
+  // Clear the form fields
+  form.reset();
+});
+
+// Close the modal when clicking the close button (×)
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Close the modal if clicking outside the modal content area
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+</script>
+
 
     
   </body>

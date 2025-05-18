@@ -39,7 +39,8 @@ function generateBotReply(userInput) {
   } 
  else if (msg.includes("contact") || msg.includes("form")) {
   return {
-    text: `📬 Want to connect with Ayanda? <br><a href="contact.html" target="_blank" style="color:#fc3200; font-weight:bold;">Click here to open the Contact Form</a>`
+    text: `📬 Want to connect with Ayanda? <br><a href="contact.html" target="_blank" style="color:#fc3200; font-weight:bold;">Click here to open the Contact Form</a>`,
+    options: ["About Ayanda", "Projects", "Certifications & Skills", "Education"]
   };
 }
 
