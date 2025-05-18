@@ -17,8 +17,7 @@
     <section class="contact-info">
         <div class="home-icon">
             <a href="index.html">
-              <i class="fa-solid fa-house fa-fade"></i>
-            </a>
+<h1><span class="black-text">Aya</span><span class="orange-text">nda.</span></h1>            </a>
           </div>
       <div class="info-item">
         <i class="fas fa-map-marker-alt"></i>
@@ -41,21 +40,21 @@
     <!-- Contact Form and Image Section -->
     <section class="contact-form-section">
       <div class="form-container">
-        <h2>Send me a message</h2>
-        <form>
-          <div class="form-group">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Subject" required>
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="button-submit">Send Message</button>
-        </form>
-      </div>
+  <form action="https://formspree.io/f/mldbzqlw" method="POST" id="contactForm">          
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="form-group">
+      <input type="text"  name="subject" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="button-submit">Send Message</button>
+  </form>
+</div>
+
 
       <!-- Modal Popup -->
 <div id="successModal" class="modal">
@@ -87,7 +86,7 @@
 </footer></section>
 
 <script>
-const form = document.querySelector("form");
+const form = document.getElementById("contactForm");
 const modal = document.getElementById("successModal");
 const closeBtn = document.getElementById("closeModal");
 
