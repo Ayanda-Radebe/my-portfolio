@@ -224,9 +224,15 @@ body {
   }
   
 .about-paragraph {
-    text-align: center;
-    display: block;
-    margin-top: 90px;
+  text-align: center;
+  display: block;
+  margin-top: 90px;
+  font-size: 20px;
+}
+
+.paragraph{
+  font-size: 18px;
+  text-align: center;
 }
 
 .education-heading{
