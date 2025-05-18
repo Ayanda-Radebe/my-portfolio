@@ -11,7 +11,8 @@
   position: fixed;
   bottom: 70px;
   right: 80px;
-  width: 300px;
+  width: 320px;
+  height: 520px;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -24,7 +25,7 @@
 }
 
 .chatbot header {
-  background-color: #4CAF50;
+  background: linear-gradient(45deg, #fc3200, #ff9f9f);
   color: white;
   padding: 10px 15px;
   display: flex;
@@ -35,6 +36,7 @@
 .chatbot header h2 {
   margin: 0;
   font-size: 18px;
+  color: white;
 }
 
 #close-btn {
@@ -46,10 +48,10 @@
 }
 
 .chatbox {
-  flex-grow: 1;
+  flex: 1;
   padding: 10px;
   overflow-y: auto;
-  max-height: 250px;
+  max-height: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -80,9 +82,10 @@
 
 .chat-input {
   display: flex;
+  padding: 8px;
   border-top: 1px solid #ccc;
+  background: #f9f9f9;
 }
-
 .chat-input textarea {
   flex-grow: 1;
   padding: 10px;
@@ -90,23 +93,42 @@
   resize: none;
   outline: none;
   font-size: 14px;
+  background: #fff;
+  border-radius: 6px;
+  height: 40px;
 }
+
+
 
 .chat-input button {
-  background-color: #4CAF50;
+  background-color: #fc3200;
   color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 0 16px;
   cursor: pointer;
 }
 
-.get-started-btn {
-  background-color: #4CAF50;
+#chatbox {
+  scroll-behavior: smooth;
+}
+
+
+.chat-option {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
   color: white;
-  border: none;
-  padding: 8px 12px;
-  margin: 10px;
-  border-radius: 8px;
+  padding: 4px 10px;        /* smaller padding */
+  margin: 4px 0;
+  border-radius: 14px;      /* a bit smaller radius */
+  max-width: fit-content;
   cursor: pointer;
-  align-self: center;
+  user-select: none;
+  font-weight: 600;
+  font-size: 12px;          /* smaller font */
+  box-shadow: 0 3px 6px rgba(255, 126, 95, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.chat-option:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
 }

@@ -3,87 +3,47 @@ function toggleChatbot() {
   chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
 }
 
-document.getElementById("get-started-btn").addEventListener("click", function () {
-  const chatbox = document.getElementById("chatbox");
+function generateBotReply(userInput) {
+  const msg = userInput.toLowerCase();
 
-  const reply = document.createElement("div");
-  reply.className = "user-message chat";
-  reply.innerHTML = "<p>Let's get started</p>";
-  chatbox.appendChild(reply);
 
-  this.style.display = "none";
-
-  const options = [
-    { text: "Get to know me", id: "home" },
-    { text: "About", id: "about" },
-    { text: "Education", id: "education" },
-    { text: "Certifications & Skills", id: "certifications" },
-    { text: "Contact Form", id: "form" }
-  ];
-
-  options.forEach(option => {
-    const optionElement = document.createElement("div");
-    optionElement.className = "chatbot-incoming chat";
-    optionElement.innerHTML = `<p>${option.text}</p>`;
-    optionElement.onclick = () => handleOptionClick(option.id);
-    chatbox.appendChild(optionElement);
-  });
-
-  chatbox.scrollTop = chatbox.scrollHeight;
-});
-
-function handleOptionClick(optionId) {
-  const chatbox = document.getElementById("chatbox");
-  const response = document.createElement("div");
-  response.className = "user-message chat";
-
-  switch (optionId) {
-    case "home":
-      response.innerHTML = "<p>You can read my about 😁</p>";
-      break;
-    case "about":
-      response.innerHTML = "<p>Here is more about me!</p>";
-      break;
-    case "education":
-      response.innerHTML = "<p>Check out my education background.</p>";
-      break;
-    case "certifications":
-      response.innerHTML = "<p>Here are my certifications and skills.</p>";
-      break;
-    case "form":
-      response.innerHTML = "<p>Feel free to fill out the contact form.</p>";
-      break;
-    default:
-      response.innerHTML = "<p>Option not recognized.</p>";
+  if (msg.includes("hello") || msg.includes("hi") || msg.includes("hey")) {
+    return {
+      text: "You can ask about different sections of Ayanda's portfolio. What do you want to check out?",
+      options: ["About Ayanda", "Projects", "Education", "Certifications & Skills", "Contact"]
+    };
+  } 
+  else if (msg.includes("about")) {
+    return {
+      text: "Ayanda is a passionate software developer who blends creativity and code to build awesome solutions. 💻✨"
+    };
+  } 
+  else if (msg.includes("projects")) {
+    return {
+      text: "🚀 You can view Ayanda’s work on GitHub by clicking the *Projects* button above. Real-world solutions in action!"
+    };
+  } 
+  else if (msg.includes("education")) {
+    return {
+      text: "🎓 Ayanda has a background in IT and has completed several certifications to stay sharp and updated!"
+    };
+  } 
+  else if (msg.includes("certifications") || msg.includes("skills")) {
+    return {
+      text: "💡 From frontend frameworks to legacy languages like COBOL, Ayanda’s toolbox is quite versatile!"
+    };
+  } 
+  else if (msg.includes("contact") || msg.includes("form")) {
+    return {
+      text: "📬 Want to connect with Ayanda? Use the Contact Form to reach out!"
+    };
+  } 
+  else {
+    return {
+      text: "🤔 I’m not sure I understood that. Try asking about projects, education, or type 'help' for suggestions.",
+      options: ["About Ayanda", "Projects", "Education", "Certifications & Skills", "Contact"]
+    };
   }
-
-  chatbox.appendChild(response);
-  chatbox.scrollTop = chatbox.scrollHeight;
-}
-
-// Handle sending message
-document.getElementById("send-btn").addEventListener("click", sendMessage);
-
-document.getElementById("user-input").addEventListener("keydown", function (e) {
-  if (e.key === "Enter" && !e.shiftKey) {
-    e.preventDefault();
-    sendMessage();
-  }
-});
-
-function sendMessage() {
-  const input = document.getElementById("user-input");
-  const msg = input.value.trim();
-  if (msg === "") return;
-
-  addMessage(msg, "user-message");
-
-  input.value = "";
-
-  setTimeout(() => {
-    const reply = generateBotReply(msg);
-    addMessage(reply, "chatbot-incoming");
-  }, 500);
 }
 
 function addMessage(text, className) {
@@ -95,13 +55,45 @@ function addMessage(text, className) {
   chatbox.scrollTop = chatbox.scrollHeight;
 }
 
-function generateBotReply(userInput) {
-  const msg = userInput.toLowerCase();
-  if (msg.includes("hello") || msg.includes("hi")) {
-    return "Hi there! How can I help you?";
-  } else if (msg.includes("help")) {
-    return "Sure! I'm here to assist you. What do you need help with?";
-  } else {
-    return "I'm just a basic bot. Try saying 'hello' or 'help'. 😊";
-  }
+function sendMessage() {
+  const input = document.getElementById("user-input");
+  const msg = input.value.trim();
+  if (msg === "") return;
+
+  addMessage(msg, "user-message");
+  input.value = "";
+
+  setTimeout(() => {
+    const botReply = generateBotReply(msg);
+    if (typeof botReply === "string") {
+      addMessage(botReply, "chatbot-incoming");
+    } else {
+      addMessage(botReply.text, "chatbot-incoming");
+
+      if (botReply.options) {
+        botReply.options.forEach(option => {
+          const chatbox = document.getElementById("chatbox");
+          const optionDiv = document.createElement("div");
+          optionDiv.className = "chatbot-incoming chat";
+          optionDiv.innerHTML = `<p class="chat-option">${option}</p>`;
+          optionDiv.onclick = () => {
+            document.getElementById("user-input").value = option;
+            sendMessage(); // simulate user sending this option
+          };
+          chatbox.appendChild(optionDiv);
+          chatbox.scrollTop = chatbox.scrollHeight;
+        });
+      }
+    }
+  }, 500);
 }
+
+// Event listeners for send button and enter key
+document.getElementById("send-btn").addEventListener("click", sendMessage);
+
+document.getElementById("user-input").addEventListener("keydown", function (e) {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+});
