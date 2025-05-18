@@ -15,29 +15,34 @@ function generateBotReply(userInput) {
   } 
   else if (msg.includes("about")) {
     return {
-      text: "Ayanda is a passionate software developer who blends creativity and code to build awesome solutions. 💻✨"
+      text: "Ayanda is a passionate software developer who blends creativity and code to build awesome solutions. 💻✨",
+      options: [ "Projects", "Education", "Certifications & Skills", "Contact"]
     };
   } 
   else if (msg.includes("projects")) {
     return {
-      text: "🚀 You can view Ayanda’s work on GitHub by clicking the *Projects* button above. Real-world solutions in action!"
+      text: "🚀 You can view Ayanda’s work on GitHub by clicking the *My Projects* on the side-bar. Real-world solutions in action!",
+      options: ["About Ayanda", "Education", "Certifications & Skills", "Contact"]
     };
   } 
   else if (msg.includes("education")) {
     return {
-      text: "🎓 Ayanda has a background in IT and has completed several certifications to stay sharp and updated!"
+      text: "🎓 Ayanda has a background in IT and has completed several certifications to stay sharp and updated!",
+      options: ["About Ayanda", "Projects", "Certifications & Skills", "Contact"]
     };
   } 
   else if (msg.includes("certifications") || msg.includes("skills")) {
     return {
-      text: "💡 From frontend frameworks to legacy languages like COBOL, Ayanda’s toolbox is quite versatile!"
+      text: "💡 From frontend frameworks to legacy languages like COBOL, Ayanda’s toolbox is quite versatile!",
+      options: ["About Ayanda", "Projects", "Education", "Contact"]
     };
   } 
-  else if (msg.includes("contact") || msg.includes("form")) {
-    return {
-      text: "📬 Want to connect with Ayanda? Use the Contact Form to reach out!"
-    };
-  } 
+ else if (msg.includes("contact") || msg.includes("form")) {
+  return {
+    text: `📬 Want to connect with Ayanda? <br><a href="contact.html" target="_blank" style="color:#fc3200; font-weight:bold;">Click here to open the Contact Form</a>`
+  };
+}
+
   else {
     return {
       text: "🤔 I’m not sure I understood that. Try asking about projects, education, or type 'help' for suggestions.",
