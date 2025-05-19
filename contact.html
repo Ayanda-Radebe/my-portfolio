@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
 
@@ -17,8 +17,7 @@
     <section class="contact-info">
         <div class="home-icon">
             <a href="index.html">
-              <i class="fa-solid fa-house fa-fade"></i>
-            </a>
+<h1><span class="black-text">Aya</span><span class="orange-text">nda.</span></h1>            </a>
           </div>
       <div class="info-item">
         <i class="fas fa-map-marker-alt"></i>
@@ -41,21 +40,33 @@
     <!-- Contact Form and Image Section -->
     <section class="contact-form-section">
       <div class="form-container">
-        <h2>Send me a message</h2>
-        <form>
-          <div class="form-group">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Subject" required>
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="button-submit">Send Message</button>
-        </form>
-      </div>
+  <form action="https://formspree.io/f/mldbzqlw" method="POST" id="contactForm">          
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="form-group">
+      <input type="text"  name="subject" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="button-submit">Send Message</button>
+  </form>
+</div>
+
+
+      <!-- Modal Popup -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2> <i class="fa-solid fa-envelope fa-bounce" style="color: #ff0000;"></i>
+      Email Successfully Sent!
+    </h2>
+    <p>Thank you for reaching out. I will get back to you soon.</p>
+  </div>
+</div>
+
   
       <div class="image-container">
         <img src="img/form.JPG" alt="grad picture">
@@ -73,6 +84,53 @@
       <p>&copy; 2024. Designed by Ayanda Radebe</p>
   </div>
 </footer></section>
+
+
+<script>
+  const form = document.getElementById("contactForm");
+  const modal = document.getElementById("successModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        modal.style.display = "block";
+        form.reset();
+      } else {
+        alert("Submission failed. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("Network error. Please try again later.");
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+
+
+</scrip>
+
 
     
   </body>

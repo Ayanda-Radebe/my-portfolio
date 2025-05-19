@@ -99,6 +99,10 @@ body {
     color: orangered;
 }
 
+.black-text {
+  color: black;
+}
+
 .name-text {
     margin: 10px 15px;
     font-size: 40PX;
@@ -220,9 +224,15 @@ body {
   }
   
 .about-paragraph {
-    text-align: center;
-    display: block;
-    margin-top: 90px;
+  text-align: center;
+  display: block;
+  margin-top: 90px;
+  font-size: 20px;
+}
+
+.paragraph{
+  font-size: 18px;
+  text-align: center;
 }
 
 .education-heading{
@@ -403,6 +413,7 @@ body {
     background-color: orangered;
   }
 
+
   .css{
     width: 80%;
     background-color: orangered;
@@ -413,8 +424,8 @@ body {
     background-color: orangered;
   }
 
-  .data{
-    width: 70%;
+  .cobol{
+    width: 50%;
     background-color: orangered;
   }
 
@@ -429,7 +440,15 @@ body {
     padding: 7px;
 }
 
-/*Form*/
+
+/*********Form**********/
+
+.home-icon a {
+  text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
 
 .contact-info {
   display: flex;
@@ -613,4 +632,60 @@ footer {
 .footer-bottom p {
   margin: 10;
   color: #ccc;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; 
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  
+}
+
+.modal-content h2 {
+  color: rgb(211, 134, 106);
+  margin-bottom: 10px;
+  font-weight: 60;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: orangered;
 }

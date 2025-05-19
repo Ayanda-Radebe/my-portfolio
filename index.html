@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.css">
+    <link rel="stylesheet" href="chatbot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
@@ -79,10 +79,12 @@
         <h1 class="About-Heading">About Me</h1>
       </div> 
        
-        <p class="about-paragraph">An ambitious Information Technology graduate, pursing real-world experience to develop acquired skills. Proficient in business systems and eager to learn new processes and programming languages</p><br>
-          <p>Hi! My name is <B><span class="orange-text">Ayanda Radebe.</span></B>Passionate about technology, experienced software developer at Capaciti, with <I>strong work ethic, attention to detail, and dedication to excellence.</I> Enjoys games, reading, and going out.</p><br>
+        <p class="about-paragraph">Driven by curiosity and energized by the ever-evolving world of tech, I thrive on building solutions that blend functionality with impact.</p><br>
+          <p class="paragraph"> I’m a software developer with hands-on experience across both frontend and backend technologies. 💻</p><br>
 
-          <p>I am excited about the future and eager to take on new challenges that allow me to continue contributing to the evolving tech landscape.</p>
+          <p class="paragraph"> <B><span class="orange-text">My journey</span></B> so far includes developing a movie database application with live search features, collaborating on a Java-based bank management system to handle real-time transactions like withdrawals and transfers, and independently building an ATM simulator in COBOL that runs directly in the terminal — no frills, just pure logic🧠.<br>
+          Whether I am building a COBOL ATM in the terminal or debugging a Java banking app at 2 AM, I am happiest when solving real-world problems with code. And if that code runs on an IBM mainframe? Even better👩‍💻.
+          When I’m not coding, you’ll find me gaming, reading, or enjoying the outdoors. I approach tech the same way I approach life: with curiosity, a commitment to improvement, and a love for challenges that keep me on my toes🚀🚀.</p>
     </section>
 
 
@@ -170,15 +172,17 @@
     </div>
   </div>
 
+  
+
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="card">
-        <h2>Data Analytics using Excel</h2>
-        <p>Developing an understanding of data-driven decision-making processes.</p>
+        <h2>Basic System Programming on IBM Z</h2>
+        <p>The foundational knowledge for the position of an IBM z/OS System Programmer and System Administrator</p>
       </div>
       <div class="flip-card-back">
-        <h1>Great Learning Academy</h1>
-        <p>2024</p>
+        <h1>IBM</h1>
+        <p>2025</p>
       </div>
     </div>
   </div>
@@ -186,16 +190,18 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="card">
-        <h2>Azure</h2>
-        <p>Master cloud computing and Azure platform services.</p>
+        <h2>IBM COBOL Basic</h2>
+        <p>Learn about COBOL from its birth and through its evolution.Key aspects of COBOL are that it is scalable, mature, and self-documenting. </p>
       </div>
       <div class="flip-card-back">
-        <h1>Great Learning Academy</h1>
-        <p>2022</p>
+        <h1>IBM</h1>
+        <p>2025</p>
       </div>
     </div>
   </div>
   </div>
+
+
 
 
   </setion>
@@ -220,9 +226,9 @@
           <div class="skills js">50%</div>
         </div>
 
-        <p class="skills-name">Data Visualisation</p>
+        <p class="skills-name">COBOL</p>
         <div class="skills-container">
-          <div class="skills data">70%</div>
+          <div class="skills cobol">50%</div>
         </div>
 
           <p class="skills-name">Business Analysis</p>
@@ -247,35 +253,29 @@
   </div>
 </footer></section>
 
-<!--ChatBot-->
-   <i class="fa-solid fa-robot" id="chatbot-icon" onclick="toggleChatbot()"></i>
+<!-- ChatBot -->
+<i class="fa-solid fa-robot" id="chatbot-icon" onclick="toggleChatbot()"></i>
 
- 
-    <div class="Chatbot" id="chatbot" style="display: none;">
-        <header>
-            <h2>ChatBot</h2>
-            <span alt="Close" id="cross" onclick="toggleChatbot()">X</span>
-        </header>
-        <ul class="chatbox">
-          <div class="chatbot-incoming chat">
-              <p>Hey! 👋</p> <br>
-              <p>How can I assist you today? </p>
-          </div>
-          <button id="get-started-btn" class="get-started-btn">Let's get started</button>
-      </ul>
-      <div class="chat-input">
-        <textarea id="user-input" rows="1" placeholder="Type your message..."></textarea>
-        <button id="send-btn">Send</button>
+<div class="chatbot" id="chatbot" style="display: none;">
+  <header>
+    <h2>ChatBot</h2>
+    <button id="close-btn" onclick="toggleChatbot()" aria-label="Close">✖</button>
+  </header>
+
+  <div class="chatbox" id="chatbox">
+    <div class="chatbot-incoming chat">
+      <p>Hey! 👋 I'm Ayanda's portfolio assistant. What would you like to explore?</p>
     </div>
+  </div>
+
+  <div class="chat-input">
+    <textarea id="user-input" rows="1" placeholder="Type your message..."></textarea>
+    <button id="send-btn">Send</button>
+  </div>
+</div>
 
 
-        <!--
-        <div class="chat-input">
-            <textarea rows="0" cols="17" placeholder="Enter a message..."></textarea>
-            <button id="sendBTN">Send</button> 
-        </div>-->
-    </div>
-  <script src="script.js" defer></script>
+<script src="chatbot.js" defer></script>
 
 
   </body>
