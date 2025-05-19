@@ -4,7 +4,7 @@ This is a personal portfolio website designed and developed by **Ayanda Radebe**
 
 ## 🔗 Live Demo
 
-[View Portfolio Website](https://your-live-demo-link.com) <!-- Replace with actual link if deployed -->
+[View Portfolio Website]([https://your-live-demo-link.com](https://my-portfolio-ayandas-projects-e1860f82.vercel.app/))
 
 ---
 
@@ -35,13 +35,13 @@ This is a personal portfolio website designed and developed by **Ayanda Radebe**
 - **CSS3** – Styling and responsive layout
 - **Google Fonts** – Custom typography
 - **Font Awesome** – Icons for visual enhancement
-- **JavaScript** – (If applicable for interactivity or form handling)
+- **JavaScript** – Interactivity and form handling
 
 ---
 
 ## 🚀 Getting Started
 
-To view or edit this project locally:
+To view  project locally:
 
 1. **Clone the repository:**
    ```bash
