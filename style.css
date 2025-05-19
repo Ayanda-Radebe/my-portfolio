@@ -374,7 +374,7 @@ body {
   }
   
 
-/*Skills*/
+/*********Skills************/
 
   .skills-heading{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -647,7 +647,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.5); 
 }
 
-/* Modal Content Box */
 .modal-content {
   background-color: #fff;
   margin: 15% auto; 
