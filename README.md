@@ -1,32 +1,49 @@
-# my-portfolio
+# My Portfolio
 
-This is a personal portfolio website designed and developed by **Ayanda Radebe**. The website showcases my education, skills, certifications, and experience as a Junior Software Developer. It also features links to my GitHub projects and a downloadable resume.
+This is a personal portfolio website designed and developed by **Ayanda Radebe**, a Junior Software Developer. The site showcases my education, skills, certifications, experience, and projects, and includes a downloadable resume.
 
-## Pages 
-- Home (Landing Page)
-- About Me
-- Education/experince 
-- Certiication
-- Skills
+## 🔗 Live Demo
 
+[View Portfolio Website](https://your-live-demo-link.com) <!-- Replace with actual link if deployed -->
 
-## Features
-- **Responsive Design**: The website adapts to different screen sizes, providing an optimal viewing experience on mobile, tablet, and desktop.
-- **Personal Information**: A summary of my education, work experience, and certifications.
-- **Skills Section**: Visual representation of my proficiency in various technologies.
-- **Projects**: A direct link to my GitHub projects for more detailed viewing.
-- **Downloadable CV**: A button to download my resume in PDF format.
+---
 
-## Technologies Used
-- **HTML5**: Structure of the webpage.
-- **CSS3**: Styling for the webpage, including responsive design elements.
-- **Google Fonts**: Font family used.
-- **Font Awesome**: Icons used throughout the site.
-- **External Links**: Includes links to my GitHub and LinkedIn profiles.
+## 📄 Pages
 
-## How to Use
-To view this project locally, follow the steps below:
+- **Home** – Landing section with a welcoming introduction.
+- **About Me** – A personal story highlighting my background and passion for tech.
+- **Education & Experience** – A timeline of my academic and professional journey.
+- **Certifications** – Verified certifications that show my continuous learning.
+- **Skills** – Visual representation of my technical abilities.
+- **Contact** – A form to get in touch with me directly.
 
-1. Clone this repository:
+---
+
+## ✨ Features
+
+- **Responsive Design** – Optimized for mobile, tablet, and desktop devices.
+- **Interactive UI** – Smooth navigation and modern layout.
+- **Project Links** – Direct access to my GitHub repositories.
+- **Downloadable Resume** – One-click PDF download of my CV.
+- **External Links** – GitHub and LinkedIn profile integration.
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** – Page structure and semantic markup
+- **CSS3** – Styling and responsive layout
+- **Google Fonts** – Custom typography
+- **Font Awesome** – Icons for visual enhancement
+- **JavaScript** – (If applicable for interactivity or form handling)
+
+---
+
+## 🚀 Getting Started
+
+To view or edit this project locally:
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Ayanda-Radebe/portfolio.git
+
