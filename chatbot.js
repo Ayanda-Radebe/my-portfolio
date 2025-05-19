@@ -84,7 +84,7 @@ function sendMessage() {
           optionDiv.innerHTML = `<p class="chat-option">${option}</p>`;
           optionDiv.onclick = () => {
             document.getElementById("user-input").value = option;
-            sendMessage(); // simulate user sending this option
+            sendMessage();
           };
           chatbox.appendChild(optionDiv);
           chatbox.scrollTop = chatbox.scrollHeight;
@@ -94,7 +94,6 @@ function sendMessage() {
   }, 500);
 }
 
-// Event listeners for send button and enter key
 document.getElementById("send-btn").addEventListener("click", sendMessage);
 
 document.getElementById("user-input").addEventListener("keydown", function (e) {
