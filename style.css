@@ -413,6 +413,7 @@ body {
     background-color: orangered;
   }
 
+
   .css{
     width: 80%;
     background-color: orangered;
@@ -423,8 +424,8 @@ body {
     background-color: orangered;
   }
 
-  .data{
-    width: 70%;
+  .cobol{
+    width: 50%;
     background-color: orangered;
   }
 
@@ -438,6 +439,7 @@ body {
     margin-left: 20%;
     padding: 7px;
 }
+
 
 /*********Form**********/
 
